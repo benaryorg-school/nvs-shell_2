@@ -14,3 +14,7 @@ function count()
 		return 2
 	fi
 }
+
+for f in $(cat $1);do
+	count $f
+done
